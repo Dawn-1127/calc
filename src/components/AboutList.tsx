@@ -179,7 +179,7 @@ export const AboutButton = memo(({ isOpen, onClick }: { isOpen: boolean; onClick
     <Button
       active={isOpen}
       aria-expanded={isOpen}
-      icon={isOpen ? 'chevron-left' : 'chevron-right'}
+      icon={isOpen ? 'chevron-right' : 'chevron-left'}
       minimal={true}
       onClick={onClick}
       text={<span className="cpp-very-compact">{gt.gettext('关于')}</span>}
