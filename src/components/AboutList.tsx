@@ -28,52 +28,54 @@ export const AboutList = memo(() => {
           <Button
             active={isOpen}
             aria-expanded={isOpen}
-            icon={isOpen ? 'chevron-down' : 'chevron-right'}
+            icon={isOpen ? 'chevron-left' : 'chevron-right'}
             minimal={true}
             onClick={() => setIsOpen((open) => !open)}
             text={gt.gettext('关于')}
           />
         </Navbar.Group>
       </Navbar>
-      {isOpen ? (
-        <Menu style={{ flex: 1, flexShrink: 1, overflow: 'auto' }}>
-          <SimpleLogList />
-          <MenuDivider title={gt.gettext('帮助与社区')} />
-          <MenuItem
-            href="https://alidocs.dingtalk.com/i/p/OlnXRJreeRDKAXLp"
-            icon="help"
-            text={gt.gettext('Closure++ 二游计算器-帮助文档')}
-            {...externalLinkProps}
-          />
+      <Menu
+        className={`cpp-about-panel ${isOpen ? 'cpp-about-panel-open' : ''}`}
+        aria-hidden={!isOpen}
+        style={{ width: '300px' }}
+      >
+        <SimpleLogList />
+        <MenuDivider title={gt.gettext('帮助与社区')} />
+        <MenuItem
+          href="https://alidocs.dingtalk.com/i/p/OlnXRJreeRDKAXLp"
+          icon="help"
+          text={gt.gettext('Closure++ 二游计算器-帮助文档')}
+          {...externalLinkProps}
+        />
 
-          <MenuItem
-            icon={'git-repo'}
-            multiline={true}
-            href={'https://github.com/orz-tools/cpp'}
-            {...externalLinkProps}
-            text={
-              <>
-                GitHub
-                <span style={{ marginLeft: '0.5em', fontWeight: 300 }}>AGPL-3.0-or-later</span>
-              </>
-            }
-          />
-          <MenuDivider title={gt.gettext('数据源')} />
-          {AboutDataSources && <AboutDataSources />}
-          <MenuDivider title={gt.gettext('其他资源')} />
-          {AboutThirdParty && <AboutThirdParty />}
-          <MenuItem
-            icon={'font'}
-            text="Source Han Sans"
-            href={
-              'https://github.com/adobe-fonts/source-han-sans/blob/e3bfa7062185d1ec689b07b9236e108a9a00e9c5/LICENSE.txt'
-            }
-            {...externalLinkProps}
-          />
-          <MenuDivider title={gt.gettext('声明')} />
-          {AboutCopyright && <AboutCopyright />}
-        </Menu>
-      ) : null}
+        <MenuItem
+          icon={'git-repo'}
+          multiline={true}
+          href={'https://github.com/orz-tools/cpp'}
+          {...externalLinkProps}
+          text={
+            <>
+              GitHub
+              <span style={{ marginLeft: '0.5em', fontWeight: 300 }}>AGPL-3.0-or-later</span>
+            </>
+          }
+        />
+        <MenuDivider title={gt.gettext('数据源')} />
+        {AboutDataSources && <AboutDataSources />}
+        <MenuDivider title={gt.gettext('其他资源')} />
+        {AboutThirdParty && <AboutThirdParty />}
+        <MenuItem
+          icon={'font'}
+          text="Source Han Sans"
+          href={
+            'https://github.com/adobe-fonts/source-han-sans/blob/e3bfa7062185d1ec689b07b9236e108a9a00e9c5/LICENSE.txt'
+          }
+          {...externalLinkProps}
+        />
+        <MenuDivider title={gt.gettext('声明')} />
+        {AboutCopyright && <AboutCopyright />}
+      </Menu>
     </>
   )
 })

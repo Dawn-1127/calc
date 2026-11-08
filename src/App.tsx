@@ -125,7 +125,14 @@ const ClosureButtonHeading = memo(() => {
   const ga = useGameAdapter()
   return (
     <Navbar.Heading style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-      <img src={`${import.meta.env.BASE_URL}favicon.png`} alt="Closure++ logo" width="24" height="24" title="" style={{ marginRight: 4 }} />
+      <img
+        src={`${import.meta.env.BASE_URL}favicon.png`}
+        alt="Closure++ logo"
+        width="24"
+        height="24"
+        title=""
+        style={{ marginRight: 4 }}
+      />
       <code>{`Closure`}</code>
       <Popover
         usePortal={true}
@@ -205,6 +212,8 @@ const App = memo(() => {
             width: '300px',
             display: 'flex',
             flexDirection: 'column',
+            position: 'relative',
+            overflow: 'visible',
           }}
         >
           <AboutList />
