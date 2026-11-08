@@ -20,7 +20,7 @@ import { atom, useAtom, useAtomValue, useSetAtom } from 'jotai'
 import React, { ErrorInfo, memo, useEffect, useState } from 'react'
 import './App.css'
 import { useAtoms, useCpp, useGameAdapter } from './Cpp'
-import { AboutList, HelpButton } from './components/AboutList'
+import { AboutButton, AboutList, HelpButton } from './components/AboutList'
 import { Chamber, ChamberPortal } from './components/Chamber'
 import { CharacterList } from './components/CharacterList'
 import { ConfigButton, MaybeSoulButton, RegionButton, StageButton } from './components/ConfigUi'
@@ -162,6 +162,7 @@ const App = memo(() => {
   const charExtraWidth = useAtomValue(charExtraWidthAtom)
   const charStatusWidth = cpp.gameComponent.charStatusWidth || defaultCharStatusWidth
   const ga = useGameAdapter()
+  const [aboutOpen, setAboutOpen] = useState(false)
 
   useEffect(() => {
     void (async () => {
@@ -201,23 +202,13 @@ const App = memo(() => {
           <RegionButton />
           <DataDropdown />
           <ReloadDataButton />
+          <AboutButton isOpen={aboutOpen} onClick={() => setAboutOpen((open) => !open)} />
           <HelpButton />
           <LocaleButton />
         </Navbar.Group>
       </Navbar>
       <div className="App">
-        <section
-          className={Classes.ELEVATION_1}
-          style={{
-            width: '300px',
-            display: 'flex',
-            flexDirection: 'column',
-            position: 'relative',
-            overflow: 'visible',
-          }}
-        >
-          <AboutList />
-        </section>
+        <AboutList isOpen={aboutOpen} />
         <section
           className={Classes.ELEVATION_1}
           style={{

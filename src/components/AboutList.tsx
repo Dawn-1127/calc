@@ -1,6 +1,6 @@
-import { Alignment, AnchorButton, Button, Menu, MenuDivider, MenuItem, MenuItemProps, Navbar } from '@blueprintjs/core'
+import { AnchorButton, Button, Menu, MenuDivider, MenuItem, MenuItemProps } from '@blueprintjs/core'
 import { format } from 'date-fns'
-import { memo, useState } from 'react'
+import { memo } from 'react'
 import { useCpp } from '../Cpp'
 import { useComponents } from '../hooks/useComponents'
 import { DataContainerObject } from '../pkg/dccache'
@@ -16,25 +16,11 @@ export const externalLinkProps = {
   },
 } satisfies React.AnchorHTMLAttributes<HTMLAnchorElement>
 
-export const AboutList = memo(() => {
-  const { AboutCopyright, AboutCredits, AboutThirdParty, AboutDataSources, email } = useComponents()
-  const realEmail = email || 'cpp@ouomail.com'
-  const [isOpen, setIsOpen] = useState(false)
+export const AboutList = memo(({ isOpen }: { isOpen: boolean }) => {
+  const { AboutCopyright, AboutCredits, AboutThirdParty, AboutDataSources } = useComponents()
 
   return (
     <>
-      <Navbar style={{ paddingLeft: '0.5em', paddingRight: '0.5em' }}>
-        <Navbar.Group align={Alignment.LEFT}>
-          <Button
-            active={isOpen}
-            aria-expanded={isOpen}
-            icon={isOpen ? 'chevron-left' : 'chevron-right'}
-            minimal={true}
-            onClick={() => setIsOpen((open) => !open)}
-            text={gt.gettext('关于')}
-          />
-        </Navbar.Group>
-      </Navbar>
       <Menu
         className={`cpp-about-panel ${isOpen ? 'cpp-about-panel-open' : ''}`}
         aria-hidden={!isOpen}
@@ -187,6 +173,19 @@ export const DataObjectStatus = memo(
     )
   },
 )
+
+export const AboutButton = memo(({ isOpen, onClick }: { isOpen: boolean; onClick: () => void }) => {
+  return (
+    <Button
+      active={isOpen}
+      aria-expanded={isOpen}
+      icon={isOpen ? 'chevron-left' : 'chevron-right'}
+      minimal={true}
+      onClick={onClick}
+      text={<span className="cpp-very-compact">{gt.gettext('关于')}</span>}
+    />
+  )
+})
 
 export const HelpButton = memo(() => {
   return (
