@@ -40,7 +40,7 @@ async function runApp() {
   }
 
   const [gameAdapter, gameComponent] = await Promise.all([gameAdapterLoaders[game](), gameComponentLoaders[game]()])
-  document.title = 'Closure' + formatProfileName(game, profile) + '++'
+  document.title = '可露希尔计算器'
   runCpp(storagePrefix, profile, gameAdapter, gameComponent)
 }
 
