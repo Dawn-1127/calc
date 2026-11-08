@@ -32,7 +32,7 @@ export const AboutList = memo(() => {
         <MenuItem
           href="https://alidocs.dingtalk.com/i/p/OlnXRJreeRDKAXLp"
           icon="help"
-          text={gt.gettext('帮助文档')}
+          text={gt.gettext('Closure++ 二游计算器-帮助文档')}
           {...externalLinkProps}
         />
 
