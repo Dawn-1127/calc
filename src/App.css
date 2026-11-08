@@ -1,0 +1,446 @@
+body {
+  overflow: hidden;
+}
+
+.App {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40px;
+  bottom: 0;
+  overflow-x: auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  z-index: 0;
+}
+
+.App > section {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  flex-shrink: 0;
+  margin-right: 1px;
+}
+
+.App > section:last-child {
+  margin-right: 0;
+}
+
+.bp6-dialog,
+.bp6-alert {
+  width: unset !important;
+  max-width: 80vw !important;
+}
+
+.cpp-level-target {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.cpp-level-target img {
+  width: 19px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.cpp-level-target .source,
+.cpp-level-target .target {
+  height: 20px;
+  font: 14px monospace;
+  line-height: 20px;
+  display: block;
+  text-align: center;
+}
+
+.cpp-simple-target {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cpp-simple-target > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: #313131;
+  color: white;
+  font: 14px monospace;
+  padding: 0px 4px;
+  line-height: 20px;
+  height: 20px;
+}
+
+.cpp-simple-target > span > img {
+  vertical-align: -1px;
+  height: 12px;
+  width: auto;
+}
+
+.cpp-uniequip-icon {
+  /* background-color: black; */
+  /* background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 45%, rgba(255,255,255,1) 100%); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cpp-uniequip-icon > img {
+  margin: 0 auto;
+}
+
+.cpp-uniequip-has-d {
+  width: 25.6666666667px !important; /* (40*2+3-6)/3 */
+}
+
+.cpp-uniequip-has-d img {
+  width: 30px !important;
+}
+
+.cpp-uniequip-shining-blue {
+  background-image: url(./components/arknights/assets/shining_blue.png);
+}
+.cpp-uniequip-shining-green {
+  background-image: url(./components/arknights/assets/shining_green.png);
+}
+.cpp-uniequip-shining-grey {
+  background-image: url(./components/arknights/assets/shining_grey.png);
+}
+.cpp-uniequip-shining-red {
+  background-image: url(./components/arknights/assets/shining_red.png);
+}
+.cpp-uniequip-shining-yellow {
+  background-image: url(./components/arknights/assets/shining_yellow.png);
+}
+
+.cpp-char-menu-master {
+  display: flex;
+  flex-direction: row;
+}
+
+.cpp-char-menu-master > * {
+  flex: 1;
+}
+
+.cpp-char-menu-master > *:first-child {
+  flex-grow: 114514;
+  flex-shrink: 1;
+  overflow: hidden;
+}
+
+.cpp-char-menu-master .bp6-menu-item .bp6-menu-item-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.cpp-char-menu-status {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background: none !important;
+}
+
+.cpp-char-menu-status::after {
+  z-index: -100;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 7px;
+  bottom: 2px;
+  border-radius: 0px;
+  background: #313131;
+  box-shadow: #313131 0px 3px 6px;
+  /* background: linear-gradient(180deg, #202020 0%, #202020 20%, #6c6c6c 95%, #6c6c6c 100%); */
+}
+
+.cpp-char-menu-status > * {
+  margin-right: 3px !important;
+}
+
+.cpp-char-menu-status > *:last-child {
+  margin-right: 4px !important;
+}
+
+.cpp-popover .bp6-popover-content {
+  padding: 15px;
+}
+
+.cpp-item-menu-master > li {
+  display: flex;
+  align-items: center;
+}
+
+.cpp-item-menu-master > li > *:first-child {
+  flex: 1;
+}
+
+.cpp-item-menu-master .bp6-menu-item .bp6-menu-item-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.cpp-item-menu-status {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.cpp-goal-counter {
+  position: relative;
+  overflow: hidden;
+}
+
+.cpp-goal-counter::before {
+  display: block;
+  content: attr(data-label);
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  font-size: 80%;
+  color: black;
+  opacity: 0.25;
+  pointer-events: none;
+  line-height: 21px;
+}
+
+.cpp-isv {
+  display: grid;
+  max-height: 80vh;
+  max-width: 100%;
+}
+
+.cpp-isv-horizontal {
+  width: 100vw;
+}
+
+.cpp-isv-vertical {
+  height: 100vh;
+}
+
+.cpp-isv-item {
+  position: relative;
+  display: inline-block;
+}
+
+.cpp-isv > .cpp-isv-item > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.cpp-isv > .cpp-isv-item > img {
+  visibility: hidden;
+}
+
+.cpp-isv.cpp-isv-horizontal > .cpp-isv-item > img {
+  height: 100%;
+  visibility: hidden;
+}
+
+.cpp-isv.cpp-isv-vertical > .cpp-isv-item > img {
+  width: 100%;
+  visibility: hidden;
+}
+
+.cpp-isviv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cpp-isviv > img.cpp-item-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.cpp-isviv-label-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  padding: 0;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.cpp-isviv-label-wrapper span,
+.cpp-isviv-label-wrapper input {
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 1em;
+}
+.cpp-isviv-label-wrapper input {
+  opacity: 0.8;
+  background-color: black;
+  padding: 0.2em 0.5em;
+  text-align: right;
+}
+
+.cpp-isv-gap > *,
+.cpp-isv-gap button {
+  width: 100%;
+  height: 100%;
+}
+
+.cpp-menu-semi-secondary {
+  opacity: 0.75;
+  font-weight: normal;
+}
+
+.cpp-menu-secondary {
+  font-size: 85%;
+  line-height: 1.4em;
+  opacity: 0.75;
+  font-weight: normal;
+}
+
+.cpp-menu-not-interactive {
+  background-color: inherit !important;
+  cursor: auto !important;
+  outline: none !important;
+}
+
+.cpp-menu-indent {
+  padding: 0 !important;
+  margin-left: 22px !important;
+}
+
+/* .App {
+  transform: rotateX(180deg);
+}
+
+.App > section {
+  transform: rotateX(180deg);
+} */
+
+.cpp-importer-diff > .bp6-tabs {
+  height: 100%;
+}
+
+.cpp-importer-diff > .bp6-tabs > .bp6-tab-panel {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+.cpp-importer-diff > .bp6-tabs > .bp6-tab-panel .bp6-menu {
+  background-color: unset;
+}
+
+.cpp-menu-nosubmenu > span.bp6-submenu-icon {
+  display: none;
+}
+
+.cpp-menu-nosubmenu > div.bp6-fill {
+  margin-right: 0;
+}
+
+.bp6-menu > .bp6-callout {
+  margin: -5px;
+  width: auto;
+  padding: 12px;
+  margin-bottom: 7px;
+}
+
+.bp6-menu > .bp6-callout + .bp6-menu-header {
+  border-top: none;
+  margin-top: -7px;
+}
+
+.bp6-menu > .bp6-callout + .bp6-menu-header:first-of-type {
+  margin-top: 0px;
+}
+
+.cpp-overflow-button > span.bp6-button-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+body .bp6-navbar,
+body .bp6-navbar-group {
+  height: 40px;
+}
+
+.cpp-charstat-group {
+  white-space: nowrap;
+}
+
+.cpp-charstat-group > .bp6-tag {
+  height: 26px;
+}
+
+.cpp-quick-filter > .bp6-navbar-divider {
+  margin: 0 5px;
+}
+
+.cpp-quick-filter > .bp6-navbar-divider + .bp6-button-group:has(.bp6-tag:first-child) {
+  margin-left: -5px;
+}
+
+.cpp-quick-filter .bp6-button {
+  min-width: auto;
+}
+
+.cpp-quick-filter > .bp6-button-group > .bp6-tag:first-child {
+  padding-right: 2px;
+}
+
+@media screen and (max-width: 1500px) {
+  body .cpp-navbar-main {
+    padding: 0 5px;
+  }
+
+  body .cpp-navbar-main .bp6-navbar-heading {
+    margin-right: 0;
+  }
+
+  body .cpp-navbar-main .bp6-navbar-divider {
+    margin: 0 5px;
+  }
+
+  body .cpp-navbar-main .bp6-button {
+    padding: 5px;
+  }
+
+  body .cpp-navbar-main .bp6-icon-chevron-down {
+    display: none;
+  }
+
+  body .cpp-navbar-main .bp6-button::before,
+  body .cpp-navbar-main .bp6-button > * {
+    margin: 0;
+  }
+
+  body .cpp-navbar-main .bp6-button {
+    display: flex;
+    gap: 7px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body .cpp-navbar-main .bp6-button-text:has(.cpp-very-compact) {
+    display: none;
+  }
+
+  body .cpp-navbar-main .cpp-very-compact {
+    display: none;
+  }
+}

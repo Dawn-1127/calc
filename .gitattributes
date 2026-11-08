@@ -1,0 +1,10 @@
+# 统一所有文本文件为 LF：仓库索引与工作区保持一致
+* text=auto eol=lf
+
+# 二进制文件
+*.png binary
+
+# Windows 脚本（当前仓库中暂无，预留规则；如以后添加则使用 CRLF）
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf

@@ -1,0 +1,900 @@
+{
+  "@type": "@orz/cpp/data-container",
+  "@version": 1,
+  "data": {
+    "values": [
+      {
+        "id": "30145",
+        "name": "晶体电子单元",
+        "apValue": 302.4308999581355,
+        "rarity": 5
+      },
+      {
+        "id": "30155",
+        "name": "烧结核凝晶",
+        "apValue": 284.8171283174969,
+        "rarity": 5
+      },
+      {
+        "id": "30115",
+        "name": "聚合剂",
+        "apValue": 238.17821263946018,
+        "rarity": 5
+      },
+      {
+        "id": "30135",
+        "name": "D32钢",
+        "apValue": 135.4698148730643,
+        "rarity": 5
+      },
+      {
+        "id": "30125",
+        "name": "双极纳米片",
+        "apValue": 105.08512091036694,
+        "rarity": 5
+      },
+      {
+        "id": "30165",
+        "name": "重相位对映体",
+        "apValue": 352.92084234124127,
+        "rarity": 5
+      },
+      {
+        "id": "31094",
+        "name": "手性屈光体",
+        "apValue": 87.80650214093392,
+        "rarity": 4
+      },
+      {
+        "id": "31104",
+        "name": "液化醚吸聚体",
+        "apValue": 90.84792663539096,
+        "rarity": 4
+      },
+      {
+        "id": "31114",
+        "name": "聚能动力单元",
+        "apValue": 101.67948535943398,
+        "rarity": 4
+      },
+      {
+        "id": "30044",
+        "name": "异铁块",
+        "apValue": 109.17894919781372,
+        "rarity": 4
+      },
+      {
+        "id": "31084",
+        "name": "环烃预制体",
+        "apValue": 99.51054322940766,
+        "rarity": 4
+      },
+      {
+        "id": "30054",
+        "name": "酮阵列",
+        "apValue": 76.91258065975546,
+        "rarity": 4
+      },
+      {
+        "id": "30064",
+        "name": "改量装置",
+        "apValue": 69.94375645794827,
+        "rarity": 4
+      },
+      {
+        "id": "30104",
+        "name": "RMA70-24",
+        "apValue": 61.41542118657458,
+        "rarity": 4
+      },
+      {
+        "id": "30094",
+        "name": "五水研磨石",
+        "apValue": 62.49530029288519,
+        "rarity": 4
+      },
+      {
+        "id": "31074",
+        "name": "固化纤维板",
+        "apValue": 91.0653223953034,
+        "rarity": 4
+      },
+      {
+        "id": "30024",
+        "name": "糖聚块",
+        "apValue": 71.70591996374267,
+        "rarity": 4
+      },
+      {
+        "id": "31034",
+        "name": "晶体电路",
+        "apValue": 91.81861316946444,
+        "rarity": 4
+      },
+      {
+        "id": "31024",
+        "name": "炽合金块",
+        "apValue": 62.427647585708726,
+        "rarity": 4
+      },
+      {
+        "id": "31044",
+        "name": "精炼溶剂",
+        "apValue": 84.65192104789344,
+        "rarity": 4
+      },
+      {
+        "id": "31054",
+        "name": "切削原液",
+        "apValue": 45.04454420189251,
+        "rarity": 4
+      },
+      {
+        "id": "31064",
+        "name": "转质盐聚块",
+        "apValue": 83.73676958515512,
+        "rarity": 4
+      },
+      {
+        "id": "31014",
+        "name": "聚合凝胶",
+        "apValue": 80.72633338415,
+        "rarity": 4
+      },
+      {
+        "id": "30084",
+        "name": "三水锰矿",
+        "apValue": 24.827120958942142,
+        "rarity": 4
+      },
+      {
+        "id": "30034",
+        "name": "聚酸酯块",
+        "apValue": 70.33993686827972,
+        "rarity": 4
+      },
+      {
+        "id": "30014",
+        "name": "提纯源岩",
+        "apValue": 65.3547103472286,
+        "rarity": 4
+      },
+      {
+        "id": "30074",
+        "name": "白马醇",
+        "apValue": 24.20469600887814,
+        "rarity": 4
+      },
+      {
+        "id": "31083",
+        "name": "环烃聚质",
+        "apValue": 37.077199913107876,
+        "rarity": 3
+      },
+      {
+        "id": "31093",
+        "name": "类凝结核",
+        "apValue": 31.20459828433987,
+        "rarity": 3
+      },
+      {
+        "id": "31103",
+        "name": "液化高能气体",
+        "apValue": 35.54114640350057,
+        "rarity": 3
+      },
+      {
+        "id": "31113",
+        "name": "电极单元",
+        "apValue": 33.147810804731684,
+        "rarity": 3
+      },
+      {
+        "id": "30063",
+        "name": "全新装置",
+        "apValue": 36.502278107589596,
+        "rarity": 3
+      },
+      {
+        "id": "30103",
+        "name": "RMA70-12",
+        "apValue": 2.88,
+        "rarity": 3
+      },
+      {
+        "id": "31073",
+        "name": "褐素纤维",
+        "apValue": 32.92271148253061,
+        "rarity": 3
+      },
+      {
+        "id": "31063",
+        "name": "转质盐组",
+        "apValue": 33.022362922647424,
+        "rarity": 3
+      },
+      {
+        "id": "30093",
+        "name": "研磨石",
+        "apValue": 2.52,
+        "rarity": 3
+      },
+      {
+        "id": "31053",
+        "name": "化合切削液",
+        "apValue": 26.63777306421784,
+        "rarity": 3
+      },
+      {
+        "id": "31013",
+        "name": "凝胶",
+        "apValue": 30.33620004825138,
+        "rarity": 3
+      },
+      {
+        "id": "31043",
+        "name": "半自然溶剂",
+        "apValue": 31.189694475539344,
+        "rarity": 3
+      },
+      {
+        "id": "30083",
+        "name": "轻锰矿",
+        "apValue": 2.16,
+        "rarity": 3
+      },
+      {
+        "id": "30053",
+        "name": "酮凝集组",
+        "apValue": 27.613941696441447,
+        "rarity": 3
+      },
+      {
+        "id": "30043",
+        "name": "异铁组",
+        "apValue": 26.984772640784914,
+        "rarity": 3
+      },
+      {
+        "id": "30073",
+        "name": "扭转醇",
+        "apValue": 1.8,
+        "rarity": 3
+      },
+      {
+        "id": "31023",
+        "name": "炽合金",
+        "apValue": 26.9171210401824,
+        "rarity": 3
+      },
+      {
+        "id": "30033",
+        "name": "聚酸酯组",
+        "apValue": 22.218873037761846,
+        "rarity": 3
+      },
+      {
+        "id": "30023",
+        "name": "糖组",
+        "apValue": 23.036448996740507,
+        "rarity": 3
+      },
+      {
+        "id": "31033",
+        "name": "晶体元件",
+        "apValue": 19.03851690523293,
+        "rarity": 3
+      },
+      {
+        "id": "30013",
+        "name": "固源岩组",
+        "apValue": 17.216615890623487,
+        "rarity": 3
+      },
+      {
+        "id": "30062",
+        "name": "装置",
+        "apValue": 9.2386473133672,
+        "rarity": 2
+      },
+      {
+        "id": "30052",
+        "name": "酮凝集",
+        "apValue": 7.0165634955237755,
+        "rarity": 2
+      },
+      {
+        "id": "30042",
+        "name": "异铁",
+        "apValue": 6.8592717444215126,
+        "rarity": 2
+      },
+      {
+        "id": "30032",
+        "name": "聚酸酯",
+        "apValue": 5.66779631013884,
+        "rarity": 2
+      },
+      {
+        "id": "30022",
+        "name": "糖",
+        "apValue": 5.87219007262284,
+        "rarity": 2
+      },
+      {
+        "id": "30012",
+        "name": "固源岩",
+        "apValue": 3.533785479940557,
+        "rarity": 2
+      },
+      {
+        "id": "30061",
+        "name": "破损装置",
+        "apValue": 3.0905370181794196,
+        "rarity": 1
+      },
+      {
+        "id": "30051",
+        "name": "双酮",
+        "apValue": 2.3498424122316113,
+        "rarity": 1
+      },
+      {
+        "id": "30041",
+        "name": "异铁碎片",
+        "apValue": 2.297411828530857,
+        "rarity": 1
+      },
+      {
+        "id": "30031",
+        "name": "酯原料",
+        "apValue": 1.9002533504366328,
+        "rarity": 1
+      },
+      {
+        "id": "30021",
+        "name": "代糖",
+        "apValue": 1.968384604597966,
+        "rarity": 1
+      },
+      {
+        "id": "30011",
+        "name": "源岩",
+        "apValue": 1.1889164070372054,
+        "rarity": 1
+      },
+      {
+        "id": "2004",
+        "name": "高级作战记录",
+        "apValue": 4.558951965065503,
+        "rarity": 5
+      },
+      {
+        "id": "2003",
+        "name": "中级作战记录",
+        "apValue": 2.2794759825327513,
+        "rarity": 4
+      },
+      {
+        "id": "2002",
+        "name": "初级作战记录",
+        "apValue": 0.9117903930131005,
+        "rarity": 3
+      },
+      {
+        "id": "2001",
+        "name": "基础作战记录",
+        "apValue": 0.45589519650655025,
+        "rarity": 2
+      },
+      {
+        "id": "4001",
+        "name": "龙门币",
+        "apValue": 0.0036,
+        "rarity": 4
+      },
+      {
+        "id": "3301",
+        "name": "技巧概要·卷1",
+        "apValue": 1.5736083721149983,
+        "rarity": 2
+      },
+      {
+        "id": "3302",
+        "name": "技巧概要·卷2",
+        "apValue": 4.000699251139826,
+        "rarity": 3
+      },
+      {
+        "id": "3303",
+        "name": "技巧概要·卷3",
+        "apValue": 10.171269282558882,
+        "rarity": 4
+      },
+      {
+        "id": "3003",
+        "name": "赤金",
+        "apValue": 0.9117903930131005,
+        "rarity": 4
+      },
+      {
+        "id": "3261",
+        "name": "医疗芯片",
+        "apValue": 17.2224,
+        "rarity": 3
+      },
+      {
+        "id": "3271",
+        "name": "辅助芯片",
+        "apValue": 17.2224,
+        "rarity": 3
+      },
+      {
+        "id": "3211",
+        "name": "先锋芯片",
+        "apValue": 17.2224,
+        "rarity": 3
+      },
+      {
+        "id": "3281",
+        "name": "特种芯片",
+        "apValue": 17.2224,
+        "rarity": 3
+      },
+      {
+        "id": "3221",
+        "name": "近卫芯片",
+        "apValue": 17.2224,
+        "rarity": 3
+      },
+      {
+        "id": "3231",
+        "name": "重装芯片",
+        "apValue": 17.2224,
+        "rarity": 3
+      },
+      {
+        "id": "3241",
+        "name": "狙击芯片",
+        "apValue": 17.2224,
+        "rarity": 3
+      },
+      {
+        "id": "3251",
+        "name": "术师芯片",
+        "apValue": 17.2224,
+        "rarity": 3
+      },
+      {
+        "id": "3262",
+        "name": "医疗芯片组",
+        "apValue": 34.4448,
+        "rarity": 4
+      },
+      {
+        "id": "3272",
+        "name": "辅助芯片组",
+        "apValue": 34.4448,
+        "rarity": 4
+      },
+      {
+        "id": "3212",
+        "name": "先锋芯片组",
+        "apValue": 34.4448,
+        "rarity": 4
+      },
+      {
+        "id": "3282",
+        "name": "特种芯片组",
+        "apValue": 34.4448,
+        "rarity": 4
+      },
+      {
+        "id": "3222",
+        "name": "近卫芯片组",
+        "apValue": 34.4448,
+        "rarity": 4
+      },
+      {
+        "id": "3232",
+        "name": "重装芯片组",
+        "apValue": 34.4448,
+        "rarity": 4
+      },
+      {
+        "id": "3242",
+        "name": "狙击芯片组",
+        "apValue": 34.4448,
+        "rarity": 4
+      },
+      {
+        "id": "3252",
+        "name": "术师芯片组",
+        "apValue": 34.4448,
+        "rarity": 4
+      },
+      {
+        "id": "3263",
+        "name": "医疗双芯片",
+        "apValue": 191.90695391973387,
+        "rarity": 5
+      },
+      {
+        "id": "3273",
+        "name": "辅助双芯片",
+        "apValue": 191.90695391973387,
+        "rarity": 5
+      },
+      {
+        "id": "3213",
+        "name": "先锋双芯片",
+        "apValue": 191.90695391973387,
+        "rarity": 5
+      },
+      {
+        "id": "3283",
+        "name": "特种双芯片",
+        "apValue": 191.90695391973387,
+        "rarity": 5
+      },
+      {
+        "id": "3223",
+        "name": "近卫双芯片",
+        "apValue": 191.90695391973387,
+        "rarity": 5
+      },
+      {
+        "id": "3233",
+        "name": "重装双芯片",
+        "apValue": 191.90695391973387,
+        "rarity": 5
+      },
+      {
+        "id": "3243",
+        "name": "狙击双芯片",
+        "apValue": 191.90695391973387,
+        "rarity": 5
+      },
+      {
+        "id": "3253",
+        "name": "术师双芯片",
+        "apValue": 191.90695391973387,
+        "rarity": 5
+      },
+      {
+        "id": "4003",
+        "name": "合成玉",
+        "apValue": 0.75,
+        "rarity": 5
+      },
+      {
+        "id": "7003",
+        "name": "寻访凭证",
+        "apValue": 450,
+        "rarity": 5
+      },
+      {
+        "id": "7004",
+        "name": "十连寻访凭证",
+        "apValue": 4500,
+        "rarity": 5
+      },
+      {
+        "id": "4002",
+        "name": "至纯源石",
+        "apValue": 135,
+        "rarity": 4
+      },
+      {
+        "id": "classic_gacha",
+        "name": "中坚寻访凭证",
+        "apValue": 376.74418604651163,
+        "rarity": 4
+      },
+      {
+        "id": "classic_gacha_10",
+        "name": "十连中坚寻访凭证",
+        "apValue": 3767.4418604651164,
+        "rarity": 4
+      },
+      {
+        "id": "7001",
+        "name": "招聘许可",
+        "apValue": 28.34993488372093,
+        "rarity": 4
+      },
+      {
+        "id": "4006",
+        "name": "采购凭证",
+        "apValue": 1.366857142857143,
+        "rarity": 3
+      },
+      {
+        "id": "32001",
+        "name": "芯片助剂",
+        "apValue": 123.01714285714287,
+        "rarity": 4
+      },
+      {
+        "id": "mod_unlock_token",
+        "name": "模组数据块",
+        "apValue": 164.02285714285716,
+        "rarity": 5
+      },
+      {
+        "id": "STORY_REVIEW_COIN",
+        "name": "事相碎片",
+        "apValue": 27.337142857142858,
+        "rarity": 5
+      },
+      {
+        "id": "4004",
+        "name": "高级凭证 ",
+        "apValue": 66.27906976744187,
+        "rarity": 5
+      },
+      {
+        "id": "4005",
+        "name": "资质凭证",
+        "apValue": 0.8,
+        "rarity": 3
+      },
+      {
+        "id": "7002",
+        "name": "加急许可",
+        "apValue": 0,
+        "rarity": 4
+      },
+      {
+        "id": "base_ap",
+        "name": "无人机",
+        "apValue": 0.037991266375545854,
+        "rarity": 4
+      },
+      {
+        "id": "3112",
+        "name": "碳",
+        "apValue": 0.792520935098154,
+        "rarity": 2
+      },
+      {
+        "id": "3113",
+        "name": "碳素",
+        "apValue": 1.2337937227752345,
+        "rarity": 3
+      },
+      {
+        "id": "3114",
+        "name": "碳素组",
+        "apValue": 1.5096379525839045,
+        "rarity": 4
+      },
+      {
+        "id": "3401",
+        "name": "家具零件",
+        "apValue": 0,
+        "rarity": 3
+      },
+      {
+        "id": "AP_GAMEPLAY",
+        "name": "理智",
+        "apValue": 1,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_levelmax_4",
+        "name": "专业干员特训装置",
+        "apValue": 1753.6322829694323,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_levelmax_5",
+        "name": "资深干员特训装置",
+        "apValue": 2738.901411353712,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_levelmax_6",
+        "name": "高级资深干员特训装置",
+        "apValue": 4391.444986899563,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_elite_II_4",
+        "name": "专业干员特训邀请函",
+        "apValue": 1892.7682187464698,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_elite_II_5",
+        "name": "资深干员特训邀请函",
+        "apValue": 3429.0569471647323,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_elite_II_6",
+        "name": "高级资深干员特训邀请函",
+        "apValue": 5164.13662444823,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_skill_specialLevelMax_4",
+        "name": "专业干员技巧集",
+        "apValue": 1191.0723105554364,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_skill_specialLevelMax_5",
+        "name": "资深干员技巧集",
+        "apValue": 1905.98898972757,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_skill_specialLevelMax_6",
+        "name": "高级资深干员技巧集",
+        "apValue": 3406.409210747334,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_skin",
+        "name": "时装自选凭证",
+        "apValue": 2430,
+        "rarity": 5
+      },
+      {
+        "id": "skin_15",
+        "name": "15源石时装",
+        "apValue": 2025,
+        "rarity": 5
+      },
+      {
+        "id": "skin_18",
+        "name": "18源石时装",
+        "apValue": 2430,
+        "rarity": 5
+      },
+      {
+        "id": "skin_21",
+        "name": "21源石时装",
+        "apValue": 2835,
+        "rarity": 5
+      },
+      {
+        "id": "skin_24",
+        "name": "24源石时装",
+        "apValue": 3240,
+        "rarity": 5
+      },
+      {
+        "id": "skin_27",
+        "name": "27源石时装",
+        "apValue": 3645,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_chipPackage",
+        "name": "自助芯片组印刻仪",
+        "apValue": 361.6704,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_5chipPackage",
+        "name": "自助芯片印刻仪",
+        "apValue": 86.112,
+        "rarity": 5
+      },
+      {
+        "id": "ap_supply_lt_80",
+        "name": "应急理智加强剂",
+        "apValue": 80,
+        "rarity": 5
+      },
+      {
+        "id": "avatar_special",
+        "name": "头像",
+        "apValue": 0,
+        "rarity": 5
+      },
+      {
+        "id": "theme_scene",
+        "name": "主题场景",
+        "apValue": 1620,
+        "rarity": 5
+      },
+      {
+        "id": "UI_Theme",
+        "name": "界面主题",
+        "apValue": 1620,
+        "rarity": 5
+      },
+      {
+        "id": "theme_scene+UI_Theme",
+        "name": "主题场景+界面主题",
+        "apValue": 3240,
+        "rarity": 5
+      },
+      {
+        "id": "business_card_theme",
+        "name": "名片主题",
+        "apValue": 2430,
+        "rarity": 5
+      },
+      {
+        "id": "premium_material_issue_voucher",
+        "name": "特级材料提货券",
+        "apValue": 109.17894919781372,
+        "rarity": 5
+      },
+      {
+        "id": "advanced_material_issue_voucher",
+        "name": "高级材料提货券",
+        "apValue": 37.077199913107876,
+        "rarity": 5
+      },
+      {
+        "id": "rare_material_issue_voucher",
+        "name": "稀有材料提货券",
+        "apValue": 352.92084234124127,
+        "rarity": 5
+      },
+      {
+        "id": "itempack_main",
+        "name": "罗德岛补给箱",
+        "apValue": 21.28,
+        "rarity": 5
+      },
+      {
+        "id": "mod_update_token_2",
+        "name": "数据增补仪",
+        "apValue": 0,
+        "rarity": 5
+      },
+      {
+        "id": "mod_update_token_1",
+        "name": "数据增补条",
+        "apValue": 0,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_item_pick6",
+        "name": "高级干员调用凭证(已废弃)",
+        "apValue": 0,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_recruitR6_pick",
+        "name": "高级干员调用凭证",
+        "apValue": 0,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_recruitR5_pick",
+        "name": "资深干员调用凭证",
+        "apValue": 0,
+        "rarity": 5
+      },
+      {
+        "id": "voucher_class_pick6",
+        "name": "中坚高级干员调用凭证",
+        "apValue": 0,
+        "rarity": 5
+      },
+      {
+        "id": "recruitment10",
+        "name": "新年寻访凭证",
+        "apValue": 0,
+        "rarity": 5
+      }
+    ]
+  },
+  "name": "arknights-yituliu-values",
+  "version": {
+    "id": "2026-11-08T00:00:00.000Z",
+    "text": "2026-11-08T00:00:00.000Z",
+    "timestamp": 1794096000000,
+    "sources": [
+      "https://ark.yituliu.cn"
+    ],
+    "schema": 2
+  }
+}
