@@ -1,6 +1,6 @@
-import { Alignment, AnchorButton, Menu, MenuDivider, MenuItem, MenuItemProps, Navbar } from '@blueprintjs/core'
+import { Alignment, AnchorButton, Button, Menu, MenuDivider, MenuItem, MenuItemProps, Navbar } from '@blueprintjs/core'
 import { format } from 'date-fns'
-import { memo } from 'react'
+import { memo, useState } from 'react'
 import { useCpp } from '../Cpp'
 import { useComponents } from '../hooks/useComponents'
 import { DataContainerObject } from '../pkg/dccache'
@@ -19,50 +19,61 @@ export const externalLinkProps = {
 export const AboutList = memo(() => {
   const { AboutCopyright, AboutCredits, AboutThirdParty, AboutDataSources, email } = useComponents()
   const realEmail = email || 'cpp@ouomail.com'
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>
       <Navbar style={{ paddingLeft: '0.5em', paddingRight: '0.5em' }}>
-        <Navbar.Group align={Alignment.RIGHT} />
-        <Navbar.Group align={Alignment.LEFT}>{gt.gettext('关于')}</Navbar.Group>
+        <Navbar.Group align={Alignment.LEFT}>
+          <Button
+            active={isOpen}
+            aria-expanded={isOpen}
+            icon={isOpen ? 'chevron-down' : 'chevron-right'}
+            minimal={true}
+            onClick={() => setIsOpen((open) => !open)}
+            text={gt.gettext('关于')}
+          />
+        </Navbar.Group>
       </Navbar>
-      <Menu style={{ flex: 1, flexShrink: 1, overflow: 'auto' }}>
-        <SimpleLogList />
-        <MenuDivider title={gt.gettext('帮助与社区')} />
-        <MenuItem
-          href="https://alidocs.dingtalk.com/i/p/OlnXRJreeRDKAXLp"
-          icon="help"
-          text={gt.gettext('Closure++ 二游计算器-帮助文档')}
-          {...externalLinkProps}
-        />
+      {isOpen ? (
+        <Menu style={{ flex: 1, flexShrink: 1, overflow: 'auto' }}>
+          <SimpleLogList />
+          <MenuDivider title={gt.gettext('帮助与社区')} />
+          <MenuItem
+            href="https://alidocs.dingtalk.com/i/p/OlnXRJreeRDKAXLp"
+            icon="help"
+            text={gt.gettext('Closure++ 二游计算器-帮助文档')}
+            {...externalLinkProps}
+          />
 
-        <MenuItem
-          icon={'git-repo'}
-          multiline={true}
-          href={'https://github.com/orz-tools/cpp'}
-          {...externalLinkProps}
-          text={
-            <>
-              GitHub
-              <span style={{ marginLeft: '0.5em', fontWeight: 300 }}>AGPL-3.0-or-later</span>
-            </>
-          }
-        />
-        <MenuDivider title={gt.gettext('数据源')} />
-        {AboutDataSources && <AboutDataSources />}
-        <MenuDivider title={gt.gettext('其他资源')} />
-        {AboutThirdParty && <AboutThirdParty />}
-        <MenuItem
-          icon={'font'}
-          text="Source Han Sans"
-          href={
-            'https://github.com/adobe-fonts/source-han-sans/blob/e3bfa7062185d1ec689b07b9236e108a9a00e9c5/LICENSE.txt'
-          }
-          {...externalLinkProps}
-        />
-        <MenuDivider title={gt.gettext('声明')} />
-        {AboutCopyright && <AboutCopyright />}
-      </Menu>
+          <MenuItem
+            icon={'git-repo'}
+            multiline={true}
+            href={'https://github.com/orz-tools/cpp'}
+            {...externalLinkProps}
+            text={
+              <>
+                GitHub
+                <span style={{ marginLeft: '0.5em', fontWeight: 300 }}>AGPL-3.0-or-later</span>
+              </>
+            }
+          />
+          <MenuDivider title={gt.gettext('数据源')} />
+          {AboutDataSources && <AboutDataSources />}
+          <MenuDivider title={gt.gettext('其他资源')} />
+          {AboutThirdParty && <AboutThirdParty />}
+          <MenuItem
+            icon={'font'}
+            text="Source Han Sans"
+            href={
+              'https://github.com/adobe-fonts/source-han-sans/blob/e3bfa7062185d1ec689b07b9236e108a9a00e9c5/LICENSE.txt'
+            }
+            {...externalLinkProps}
+          />
+          <MenuDivider title={gt.gettext('声明')} />
+          {AboutCopyright && <AboutCopyright />}
+        </Menu>
+      ) : null}
     </>
   )
 })
