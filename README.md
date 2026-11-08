@@ -1,3 +1,5 @@
+本项目仅个人使用，修改了部分内容。
+请大家使用源仓库吧
 ## Closure++
 
 Originally known as Yet Another Toolbox for Arknights. Now with more games!
