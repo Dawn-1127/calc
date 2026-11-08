@@ -10,7 +10,11 @@ FocusStyleManager.onlyShowFocusOnTabs()
 async function runApp() {
   await setupLocale()
 
-  const pathName = location.pathname
+  const baseUrl = import.meta.env.BASE_URL
+  let pathName = location.pathname
+  if (baseUrl !== '/' && pathName.startsWith(baseUrl)) {
+    pathName = pathName.slice(baseUrl.length - 1)
+  }
   if (pathName[0] !== '/') throw new Error('location pathname not started with /')
 
   const parts = pathName.split('/')
@@ -18,7 +22,7 @@ async function runApp() {
 
   const game = parts[1] as GameName
   if (!game) {
-    location.replace('/arknights/')
+    location.replace(`${baseUrl}arknights/`)
     return
   }
   if (!Object.prototype.hasOwnProperty.call(gameAdapterLoaders, game)) throw new Error('invalid game name')
@@ -30,7 +34,7 @@ async function runApp() {
 
   if (profile && !localStorage.getItem(storagePrefix + 'userdata')) {
     if (!confirm('profile ' + formatProfileName(game, profile) + ' does not exist. do you want to create it?')) {
-      location.replace('/arknights/')
+      location.replace(`${baseUrl}arknights/`)
       return
     }
   }
@@ -47,7 +51,7 @@ runApp().catch((e) => {
   he.appendChild(document.createElement('br'))
   const a = document.createElement('a')
   he.appendChild(a)
-  a.href = '/'
+  a.href = import.meta.env.BASE_URL
   a.text = '[go back to home]'
   console.error(e)
 })

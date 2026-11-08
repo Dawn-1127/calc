@@ -125,7 +125,7 @@ const ClosureButtonHeading = memo(() => {
   const ga = useGameAdapter()
   return (
     <Navbar.Heading style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-      <img src="/favicon.png" alt="Closure++ logo" width="24" height="24" title="" style={{ marginRight: 4 }} />
+      <img src={`${import.meta.env.BASE_URL}favicon.png`} alt="Closure++ logo" width="24" height="24" title="" style={{ marginRight: 4 }} />
       <code>{`Closure`}</code>
       <Popover
         usePortal={true}
@@ -428,7 +428,7 @@ class ErrorBoundary extends React.Component<
           <DialogFooter
             actions={
               <>
-                <AnchorButton href={'/'} minimal icon={'home'}>
+                <AnchorButton href={import.meta.env.BASE_URL} minimal icon={'home'}>
                   {gt.gettext('返回主页')}
                 </AnchorButton>
               </>

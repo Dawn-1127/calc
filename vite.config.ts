@@ -8,7 +8,8 @@ const chunks = {
 } as Record<string, RegExp[]>
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  base: command === 'serve' ? '/' : '/calc/',
   plugins: [react(), visualizer() as PluginOption, svgr()],
   build: {
     rollupOptions: {
@@ -36,7 +37,7 @@ export default defineConfig({
       },
     },
   },
-})
+}))
 
 const CSS_LANGS_RE =
   /\.(css|less|sass|scss|styl|stylus|pcss|postcss|sss)(?:$|\?)/

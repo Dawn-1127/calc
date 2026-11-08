@@ -32,13 +32,13 @@ export const ProfileMenu = memo(() => {
       {profiles.map((profile) => (
         <MenuItem
           key={profile[0] + '/' + profile[1]}
-          href={`/${profile[0]}/${profile[1]}`}
+          href={`${import.meta.env.BASE_URL}${profile[0]}/${profile[1]}`}
           text={<ProfileTitle codename={profile[0]} profile={profile[1]} />}
           active={profile[0].toString() === cpp.gameAdapter.getCodename() && profile[1] === cpp.instanceName}
         />
       ))}
       <MenuDivider />
-      <MenuItem text="Home" icon="home" href="/" />
+      <MenuItem text="Home" icon="home" href={import.meta.env.BASE_URL} />
     </>
   )
 })

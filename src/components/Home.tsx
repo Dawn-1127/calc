@@ -14,7 +14,7 @@ export const Home = memo(() => {
       <Navbar fixedToTop={true}>
         <Navbar.Group align={Alignment.LEFT}>
           <Navbar.Heading style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-            <img src="/favicon.png" alt="Closure++ logo" width="24" height="24" title="" style={{ marginRight: 4 }} />
+            <img src={`${import.meta.env.BASE_URL}favicon.png`} alt="Closure++ logo" width="24" height="24" title="" style={{ marginRight: 4 }} />
             <code>{`Closure++`}</code>
           </Navbar.Heading>
         </Navbar.Group>
@@ -31,7 +31,7 @@ export const Home = memo(() => {
               <ul>
                 {aa.map((profile) => (
                   <li key={profile[0] + '/' + profile[1]}>
-                    <a href={`/${profile[0]}/${profile[1]}`}>
+                    <a href={`${import.meta.env.BASE_URL}${profile[0]}/${profile[1]}`}>
                       <code>{formatProfileName(profile[0], profile[1])}</code>
                     </a>
                   </li>
@@ -48,7 +48,7 @@ export const Home = memo(() => {
                   .filter((x) => x[2])
                   .map((profile) => (
                     <li key={profile[0] + '/' + profile[1]}>
-                      <a href={`/${encodeURIComponent(profile[0])}/${encodeURIComponent(profile[1])}`}>
+                      <a href={`${import.meta.env.BASE_URL}${encodeURIComponent(profile[0])}/${encodeURIComponent(profile[1])}`}>
                         <code>+ {formatProfileName(profile[0], profile[1])}</code>
                       </a>
                     </li>
