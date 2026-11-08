@@ -300,8 +300,8 @@ export const InventorySyncer = memo(() => {
   return (
     <section className={Classes.ELEVATION_1}>
       <Navbar>
-        <Navbar.Group align={Alignment.LEFT}>{title}</Navbar.Group>
-        <Navbar.Group align={Alignment.RIGHT}>
+        <Navbar.Group align={Alignment.START}>{title}</Navbar.Group>
+        <Navbar.Group align={Alignment.END}>
           <Button
             minimal
             active={!showAll}

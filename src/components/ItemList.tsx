@@ -582,12 +582,12 @@ export const ItemList = memo(<G extends IGame>() => {
           paddingRight: '0.5em',
         }}
       >
-        <Navbar.Group align={Alignment.RIGHT}>
+        <Navbar.Group align={Alignment.END}>
           {gt.gettext('总价值')}
           <AllValue />
           <SyncButton />
         </Navbar.Group>
-        <Navbar.Group align={Alignment.LEFT}>
+        <Navbar.Group align={Alignment.START}>
           <HideCompletedButton />
         </Navbar.Group>
       </Navbar>

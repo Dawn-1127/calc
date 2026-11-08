@@ -12,13 +12,13 @@ export const Home = memo(() => {
   return (
     <>
       <Navbar fixedToTop={true}>
-        <Navbar.Group align={Alignment.LEFT}>
+        <Navbar.Group align={Alignment.START}>
           <Navbar.Heading style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
             <img src={`${import.meta.env.BASE_URL}favicon.png`} alt="Closure++ logo" width="24" height="24" title="" style={{ marginRight: 4 }} />
             <code>{`Closure++`}</code>
           </Navbar.Heading>
         </Navbar.Group>
-        <Navbar.Group align={Alignment.RIGHT}>
+        <Navbar.Group align={Alignment.END}>
           <HelpButton />
           <LocaleButton />
         </Navbar.Group>

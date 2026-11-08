@@ -27,7 +27,6 @@ import { ConfigButton, MaybeSoulButton, RegionButton, StageButton } from './comp
 import { Err, ErrAtom } from './components/Err'
 import { FarmList } from './components/FarmList'
 import { ItemList } from './components/ItemList'
-import { ProfileMenu, ProfileTitle } from './components/Profile'
 import { TaskList } from './components/TaskList'
 import { AppToaster } from './components/Toaster'
 import { UserDataManagerButton, UserDataManagerMenuItem } from './components/UserDataManager'
@@ -120,40 +119,6 @@ const ReloadDataButton = memo(() => {
   )
 })
 
-const ClosureButtonHeading = memo(() => {
-  const cpp = useCpp()
-  const ga = useGameAdapter()
-  return (
-    <Navbar.Heading style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-      <img
-        src={`${import.meta.env.BASE_URL}favicon.png`}
-        alt="Closure++ logo"
-        width="24"
-        height="24"
-        title=""
-        style={{ marginRight: 4 }}
-      />
-      <code>{`Closure`}</code>
-      <Popover
-        usePortal={true}
-        minimal={true}
-        content={
-          <Menu>
-            <ProfileMenu />
-          </Menu>
-        }
-        position="bottom-left"
-      >
-        <Button minimal style={{ paddingLeft: 0, paddingRight: 0 }}>
-          <ProfileTitle codename={ga.getCodename()} profile={cpp.instanceName} />
-        </Button>
-      </Popover>
-      <code>{`++`}</code>
-      {/* <code>{`Closure++`}</code> */}
-    </Navbar.Heading>
-  )
-})
-
 const charExtraWidthAtom = atom(0)
 
 const App = memo(() => {
@@ -188,9 +153,7 @@ const App = memo(() => {
     <>
       {cpp.gameComponent.style ? <style dangerouslySetInnerHTML={{ __html: cpp.gameComponent.style }} /> : null}
       <Navbar fixedToTop={true} className="cpp-navbar-main">
-        <Navbar.Group align={Alignment.LEFT}>
-          <ClosureButtonHeading />
-          <Navbar.Divider />
+        <Navbar.Group align={Alignment.START}>
           <UndoButtons />
           <Navbar.Divider />
           <ValueOptionButton />
@@ -198,7 +161,7 @@ const App = memo(() => {
           <ConfigButton />
           <MaybeSoulButton />
         </Navbar.Group>
-        <Navbar.Group align={Alignment.RIGHT}>
+        <Navbar.Group align={Alignment.END}>
           <RegionButton />
           <DataDropdown />
           <ReloadDataButton />
@@ -334,10 +297,7 @@ export const Loading = memo(() => {
   return (
     <>
       <Navbar fixedToTop={true}>
-        <Navbar.Group align={Alignment.LEFT}>
-          <ClosureButtonHeading />
-        </Navbar.Group>
-        <Navbar.Group align={Alignment.RIGHT}>
+        <Navbar.Group align={Alignment.END}>
           <HelpButton />
           <LocaleButton />
         </Navbar.Group>

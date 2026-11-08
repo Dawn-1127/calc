@@ -212,7 +212,7 @@ export const FarmList = memo(() => {
   return (
     <>
       <Navbar style={{ paddingLeft: '0.5em', paddingRight: '0.5em' }}>
-        <Navbar.Group align={Alignment.RIGHT}>
+        <Navbar.Group align={Alignment.END}>
           <Popover
             usePortal={true}
             minimal={true}
@@ -241,7 +241,7 @@ export const FarmList = memo(() => {
             onClick={() => refresh()}
           />
         </Navbar.Group>
-        <Navbar.Group align={Alignment.LEFT}>
+        <Navbar.Group align={Alignment.START}>
           {response ? <ValueTag value={response.ap} intent={'primary'} /> : null}
         </Navbar.Group>
       </Navbar>

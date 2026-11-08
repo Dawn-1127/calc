@@ -405,8 +405,8 @@ export const TaskList = memo(<G extends IGame>() => {
   return (
     <>
       <Navbar style={{ paddingLeft: '0.5em', paddingRight: '0.5em' }}>
-        <Navbar.Group align={Alignment.RIGHT} />
-        <Navbar.Group align={Alignment.LEFT}>
+        <Navbar.Group align={Alignment.END} />
+        <Navbar.Group align={Alignment.START}>
           <HideCostsButton />
         </Navbar.Group>
       </Navbar>

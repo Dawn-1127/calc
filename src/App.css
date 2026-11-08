@@ -311,7 +311,7 @@ body {
   top: 40px;
   bottom: 0;
   right: 0;
-  z-index: 4;
+  z-index: 19;
   overflow: auto;
   visibility: hidden;
   opacity: 0;
@@ -402,6 +402,10 @@ body {
 [type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
   appearance: none;
+}
+
+body .bp6-navbar {
+  z-index: 20;
 }
 
 body .bp6-navbar,
