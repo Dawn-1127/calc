@@ -4,7 +4,6 @@ import { groupBy, sortBy, without } from 'ramda'
 import React, { memo } from 'react'
 import { useAtoms, useCpp, useGameAdapter } from '../Cpp'
 import { gt } from '../pkg/gt'
-import { DescriptionMenuItem } from './AboutList'
 import { SampleTag } from './Value'
 
 export const ForbiddenFormulaTag = memo(({ tag, text }: { tag: string; text: React.ReactNode }) => {
@@ -215,14 +214,6 @@ export const RegionButton = memo(() => {
               />
             )
           })}
-          <MenuDivider />
-          <DescriptionMenuItem
-            icon={'info-sign'}
-            text={gt.gettext('免责声明')}
-            description={
-              'The names, abbreviations, and codes of countries, regions, and languages are presented in their original form as accurately as possible, and do not reflect any political biases held by the developer.'
-            }
-          />
         </Menu>
       }
       position="bottom-right"
