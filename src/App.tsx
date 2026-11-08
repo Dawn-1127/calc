@@ -162,11 +162,11 @@ const App = memo(() => {
           <MaybeSoulButton />
         </Navbar.Group>
         <Navbar.Group align={Alignment.END}>
-          <RegionButton />
           <DataDropdown />
           <ReloadDataButton />
-          <AboutButton isOpen={aboutOpen} onClick={() => setAboutOpen((open) => !open)} />
+          <RegionButton />
           <LocaleButton />
+          <AboutButton isOpen={aboutOpen} onClick={() => setAboutOpen((open) => !open)} />
         </Navbar.Group>
       </Navbar>
       <div className="App">
