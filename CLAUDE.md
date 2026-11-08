@@ -24,7 +24,7 @@ After changing any user-facing strings, run:
 
 ## Architecture
 
-**Multi-game toolbox** — Closure++ supports multiple gacha games (Arknights, Reverse:1999) through a plugin system.
+**Arknights toolbox** — Closure++ is configured to provide the Arknights toolset through the game plugin system.
 
 **Stack**: React 18 + Jotai (state) + BlueprintJS 5 (UI) + Vite + TypeScript (strict).
 
