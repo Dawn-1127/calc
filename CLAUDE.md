@@ -53,7 +53,6 @@ Games are code-split via dynamic imports. The URL path (`/{game}/{profile}`) det
 | `cpp-basic` | Core interfaces (`IGame`, `IGameAdapter`, `DataManager`) |
 | `cpp-core` | Shared logic (UserData atoms, Task solver, formula system) |
 | `cpp-arknights` | Arknights adapter |
-| `cpp-re1999` | Reverse:1999 adapter |
 | `gt` | Gettext wrapper |
 | `dccache` | Data container caching |
 | `blobcache` | Image/asset variant handling |

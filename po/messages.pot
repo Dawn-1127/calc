@@ -11,31 +11,19 @@ msgstr ""
 msgid "按游戏内仓库排布形式展示"
 msgstr ""
 
-#: src/components/AboutList.tsx:231
+#: src/components/AboutList.tsx:184
 msgid "帮助"
-msgstr ""
-
-#: src/components/AboutList.tsx:35
-msgid "帮助文档"
 msgstr ""
 
 #: src/components/AboutList.tsx:31
 msgid "帮助与社区"
 msgstr ""
 
-#: src/components/arknights/AboutList.tsx:46
-msgid "本工具中部分素材掉落统计数据由企鹅物流统计，采用知识共享 署名-非商业性使用 4.0 国际许可协议进行许可。"
-msgstr ""
-
-#: src/components/re1999/AboutList.tsx:14
-msgid "本项目所使用的游戏资源（包括但不限于：游戏图片、动画、音频、文本原文或其转译版本等）仅用于更好地表现游戏资料、增强用户体验，其版权属于广州深蓝互动网络科技有限公司和其关联公司。"
-msgstr ""
-
 #: src/components/arknights/AboutList.tsx:16
 msgid "本项目所使用的游戏资源（包括但不限于：游戏图片、动画、音频、文本原文或其转译版本等）仅用于更好地表现游戏资料、增强用户体验，其版权属于上海鹰角网络科技有限公司和其关联公司。"
 msgstr ""
 
-#: src/components/LogList.tsx:269
+#: src/components/LogList.tsx:262
 msgid "查看更多…"
 msgstr ""
 
@@ -49,7 +37,6 @@ msgid "撤销"
 msgstr ""
 
 #: src/components/arknights/CharacterStatusPopover.tsx:492
-#: src/components/re1999/CharacterStatusPopover.tsx:296
 msgid "持有"
 msgstr ""
 
@@ -59,7 +46,6 @@ msgstr ""
 
 #: src/components/arknights/CharacterStatusPopover.tsx:495
 #: src/components/CharacterStatusPopover.tsx:48
-#: src/components/re1999/CharacterStatusPopover.tsx:299
 msgid "当前状态"
 msgstr ""
 
@@ -82,7 +68,7 @@ msgstr ""
 msgid "导入「MAA 仓库识别」数据"
 msgstr ""
 
-#: src/App.tsx:275
+#: src/App.tsx:274
 msgid "导入/导出"
 msgstr ""
 
@@ -111,11 +97,11 @@ msgstr ""
 msgid "读取文件失败，请重试"
 msgstr ""
 
-#: src/App.tsx:433
+#: src/App.tsx:432
 msgid "返回主页"
 msgstr ""
 
-#: src/components/LogList.tsx:192
+#: src/components/LogList.tsx:185
 msgid "更新笔记"
 msgstr ""
 
@@ -125,17 +111,13 @@ msgid "更新数据中…"
 msgstr ""
 
 #. %s: datetime
-#: src/components/AboutList.tsx:185
+#: src/components/AboutList.tsx:138
 msgid "更新于 %s"
 msgstr ""
 
-#: src/App.tsx:478
+#: src/App.tsx:477
 #: src/components/Importer.tsx:75
 msgid "关闭"
-msgstr ""
-
-#: src/App.tsx:540
-msgid "关闭提示"
 msgstr ""
 
 #: src/components/ConfigUi.tsx:153
@@ -175,7 +157,7 @@ msgid "角色计划排序"
 msgstr ""
 
 #. %s: datetime
-#: src/components/LogList.tsx:249
+#: src/components/LogList.tsx:242
 msgid "截止 %s"
 msgstr ""
 
@@ -183,7 +165,7 @@ msgstr ""
 msgid "界面语言"
 msgstr ""
 
-#: src/components/LogList.tsx:253
+#: src/components/LogList.tsx:246
 msgid "近期更新"
 msgstr ""
 
@@ -202,15 +184,11 @@ msgid ""
 "你现在的数据将会永久失去！（真的很久！）"
 msgstr ""
 
-#: src/components/arknights/AboutList.tsx:59
-msgid "来自明日方舟一图流的数据，除非另有声明，采用 知识共享 署名-非商业性使用 4.0 国际 许可协议 进行许可。转载、公开或以任何形式复制、发行、再传播明日方舟一图流的任何内容时，必须注明从明日方舟一图流转载，并提供版权标识、许可协议标识、免责标识和作品链接；且未经许可，不得将本站内容或由其衍生作品用于商业目的。"
-msgstr ""
-
 #: src/components/ConfigUi.tsx:221
 msgid "免责声明"
 msgstr ""
 
-#: src/components/arknights/AboutList.tsx:51
+#: src/components/arknights/AboutList.tsx:48
 msgid "明日方舟一图流 材料价值数据"
 msgstr ""
 
@@ -218,21 +196,16 @@ msgstr ""
 msgid "明日方舟一图流 干员练度统计数据"
 msgstr ""
 
-#: src/components/AboutList.tsx:95
-msgid "鸣谢"
-msgstr ""
-
-#: src/App.tsx:440
+#: src/App.tsx:439
 msgid "您不妨试试"
 msgstr ""
 
 #: src/components/arknights/CharacterStatusPopover.tsx:495
 #: src/components/CharacterStatusPopover.tsx:48
-#: src/components/re1999/CharacterStatusPopover.tsx:299
 msgid "培养目标"
 msgstr ""
 
-#: src/components/AboutList.tsx:85
+#: src/components/AboutList.tsx:53
 msgid "其他资源"
 msgstr ""
 
@@ -300,12 +273,8 @@ msgstr ""
 msgid "社区练度统计数据"
 msgstr ""
 
-#: src/components/AboutList.tsx:110
+#: src/components/AboutList.tsx:63
 msgid "声明"
-msgstr ""
-
-#: src/App.tsx:531
-msgid "时间重叠、飞跃，令人恍惚，所幸我们共度的时光鲜明而真切……"
 msgstr ""
 
 #: src/components/UserDataManager.tsx:100
@@ -320,12 +289,8 @@ msgstr ""
 msgid "数据已更新，正在重新载入…"
 msgstr ""
 
-#: src/components/AboutList.tsx:83
+#: src/components/AboutList.tsx:51
 msgid "数据源"
-msgstr ""
-
-#: src/components/arknights/AboutList.tsx:67
-msgid "数据整理自小黑盒 app 明日方舟干员统计功能。"
 msgstr ""
 
 #: src/components/SynthesisList.tsx:101
@@ -340,7 +305,7 @@ msgstr ""
 msgid "未找到新数据"
 msgstr ""
 
-#: src/pkg/cpp-basic/DataManager.ts:88
+#: src/pkg/cpp-basic/DataManager.ts:94
 msgid "无法加载数据，请检查网络连接/更换网络/使用「加速器」/切换线路。"
 msgstr ""
 
@@ -373,10 +338,6 @@ msgstr ""
 msgid "选项"
 msgstr ""
 
-#: src/App.tsx:520
-msgid "页面目前也许还能使用。但随着重构或调整，届时 REVERSE1999 相关的功能或将不再保留。如果您有需要保存的数据，建议尽早导出备份。感谢您的理解与支持。"
-msgstr ""
-
 #: src/components/Importer.tsx:341
 msgid "以往"
 msgstr ""
@@ -395,16 +356,11 @@ msgstr ""
 msgid "优先培养（星标）"
 msgstr ""
 
-#: src/components/AboutList.tsx:66
-msgid "邮箱"
-msgstr ""
-
 #: src/components/ConfigUi.tsx:198
 msgid "游戏服务器"
 msgstr ""
 
 #: src/components/arknights/AboutList.tsx:15
-#: src/components/re1999/AboutList.tsx:13
 msgid "游戏资源"
 msgstr ""
 
@@ -427,10 +383,6 @@ msgstr ""
 #: src/components/arknights/MAAItemImporter.tsx:56
 #: src/components/arknights/SklandImporter.tsx:241
 msgid "粘贴的东西好像不太对，请重试。"
-msgstr ""
-
-#: src/App.tsx:525
-msgid "这一决定是因为我们缺乏足够的精力和热情。如果您有兴趣持续维护，欢迎在 GitHub 上提交 Pull Request。"
 msgstr ""
 
 #. %d: number
@@ -457,25 +409,13 @@ msgstr ""
 msgid "最好还是别合成的道具"
 msgstr ""
 
-#: src/App.tsx:517
-msgid "Closure++ 不再支持 REVERSE1999。"
-msgstr ""
-
-#: src/App.tsx:510
-msgid "Closure++ 对 REVERSE1999 的支持现已结束"
-msgstr ""
-
-#: src/components/AboutList.tsx:43
-msgid "Discord"
+#: src/components/AboutList.tsx:35
+msgid "Closure++ 二游计算器-帮助文档"
 msgstr ""
 
 #: src/components/arknights/AboutList.tsx:31
 #: src/components/arknights/AboutList.tsx:37
 msgid "Kengxxiao 解析的游戏数据"
-msgstr ""
-
-#: src/components/AboutList.tsx:54
-msgid "QQ 交流群"
 msgstr ""
 
 #: src/pkg/cpp-arknights/GameAdapter.ts:352
@@ -729,7 +669,7 @@ msgctxt "arknights zone"
 msgid "芯片搜索"
 msgstr ""
 
-#: src/components/LogList.tsx:33
+#: src/components/LogList.tsx:32
 msgctxt "changelog"
 msgid "从 MAA 导入仓库时保留不支持识别的道具"
 msgstr ""
@@ -739,62 +679,62 @@ msgctxt "changelog"
 msgid "导入前检查数据更新"
 msgstr ""
 
-#: src/components/LogList.tsx:60
+#: src/components/LogList.tsx:58
 msgctxt "changelog"
 msgid "道具图标不存在时显示名称"
 msgstr ""
 
-#: src/components/LogList.tsx:87
+#: src/components/LogList.tsx:84
 msgctxt "changelog"
 msgid "加入海外服务器的游戏数据"
 msgstr ""
 
-#: src/components/LogList.tsx:106
+#: src/components/LogList.tsx:103
 msgctxt "changelog"
 msgid "接入明日方舟一图流的干员练度统计数据"
 msgstr ""
 
-#: src/components/LogList.tsx:100
+#: src/components/LogList.tsx:97
 msgctxt "changelog"
 msgid "接入小黑盒 app 的干员统计数据"
 msgstr ""
 
-#: src/components/LogList.tsx:50
+#: src/components/LogList.tsx:48
 msgctxt "changelog"
 msgid "修复干员「阿米娅」在特定情况下数据异常的问题"
 msgstr ""
 
-#: src/components/LogList.tsx:81
+#: src/components/LogList.tsx:79
 msgctxt "changelog"
 msgid "优化干员列表样式"
 msgstr ""
 
-#: src/components/LogList.tsx:55
+#: src/components/LogList.tsx:53
 msgctxt "changelog"
 msgid "优化小屏幕上的导航栏体验"
 msgstr ""
 
-#: src/components/LogList.tsx:39
+#: src/components/LogList.tsx:37
 msgctxt "changelog"
 msgid "增加共鸣调频支持"
 msgstr ""
 
-#: src/components/LogList.tsx:27
+#: src/components/LogList.tsx:26
 msgctxt "changelog"
 msgid "增加海外服掉落数据 (使用国服同期快照)"
 msgstr ""
 
-#: src/components/LogList.tsx:44
+#: src/components/LogList.tsx:42
 msgctxt "changelog"
 msgid "增加角色的快速过滤器"
 msgstr ""
 
-#: src/components/LogList.tsx:93
+#: src/components/LogList.tsx:90
 msgctxt "changelog"
 msgid "增加一些基于社区练度统计数据的排行榜视图"
 msgstr ""
 
-#: src/components/LogList.tsx:68
+#: src/components/LogList.tsx:66
 msgctxt "changelog"
 msgid "支持界面语言切换"
 msgstr ""
@@ -804,34 +744,14 @@ msgctxt "changelog"
 msgid "支持拼音、模糊匹配"
 msgstr ""
 
-#: src/components/LogList.tsx:75
+#: src/components/LogList.tsx:73
 msgctxt "changelog"
 msgid "支持森空岛仓库导入"
 msgstr ""
 
-#: src/components/AboutList.tsx:101
-msgctxt "credit role"
-msgid "帮助文档撰写"
-msgstr ""
-
-#: src/components/re1999/AboutList.tsx:65
-msgctxt "credit role"
-msgid "测试和建议"
-msgstr ""
-
-#: src/components/re1999/AboutList.tsx:59
-msgctxt "credit role"
-msgid "海外服数据维护"
-msgstr ""
-
-#: src/components/arknights/AboutList.tsx:100
+#: src/components/arknights/AboutList.tsx:93
 msgctxt "credit role"
 msgid "矢量图标绘制"
-msgstr ""
-
-#: src/components/AboutList.tsx:108
-msgctxt "credit role"
-msgid "数据源自动化"
 msgstr ""
 
 #: src/entry.tsx:25
@@ -874,7 +794,7 @@ msgctxt "error context"
 msgid "与「提取装置」互操作时遇到问题"
 msgstr ""
 
-#: src/App.tsx:421
+#: src/App.tsx:420
 msgctxt "error context"
 msgid "遇到错误"
 msgstr ""
@@ -950,43 +870,43 @@ msgid "星标"
 msgstr ""
 
 #. initial
-#: src/App.tsx:309
+#: src/App.tsx:308
 msgctxt "loading status"
 msgid "别急…"
 msgstr ""
 
 #. joke text
-#: src/App.tsx:358
+#: src/App.tsx:357
 msgctxt "loading status"
 msgid "海记忆体知己，天涯霍位元人"
 msgstr ""
 
 #. done
-#: src/App.tsx:326
+#: src/App.tsx:325
 msgctxt "loading status"
 msgid "马上就好…"
 msgstr ""
 
 #. loading hero line 2
-#: src/App.tsx:367
+#: src/App.tsx:366
 msgctxt "loading status"
 msgid "请稍候"
 msgstr ""
 
 #. loading data objects, %s: names of pending data objects
-#: src/App.tsx:314
+#: src/App.tsx:313
 msgctxt "loading status"
 msgid "仍在加载 %s 中…"
 msgstr ""
 
 #. loaded data objects
-#: src/App.tsx:322
+#: src/App.tsx:321
 msgctxt "loading status"
 msgid "收拾中…"
 msgstr ""
 
 #. loading hero line 1, %s: Product Name (Closure++)
-#: src/App.tsx:360
+#: src/App.tsx:359
 msgctxt "loading status"
 msgid "我们正在准备您的 %s"
 msgstr ""
@@ -1009,244 +929,6 @@ msgstr ""
 #: src/components/CharacterList.tsx:606
 msgctxt "predefined view name"
 msgid "想看的"
-msgstr ""
-
-#: src/components/re1999/AboutList.tsx:33
-msgctxt "re1999"
-msgid "伴春风而归的材料掉率共建表"
-msgstr ""
-
-#: src/components/re1999/AboutList.tsx:37
-msgctxt "re1999"
-msgid "本表格采用知识共享 署名-非商业性使用 4.0 国际 许可协议进行许可。转载、公开或以任何形式复制、发行、再传播本表格任何内容时，必须注明从伴春风而归的材料掉率共建表转载，并提供版权标识、许可协议标识、免责标识和作品链接；且未经许可，不得将本表格内容或由其衍生作品用于商业目的。"
-msgstr ""
-
-#: src/components/re1999/AboutList.tsx:43
-msgctxt "re1999"
-msgid "材料价值数据"
-msgstr ""
-
-#: src/components/re1999/AboutList.tsx:30
-msgctxt "re1999"
-msgid "海外服游戏数据"
-msgstr ""
-
-#: src/components/re1999/AboutList.tsx:46
-msgctxt "re1999"
-msgid "也来源于伴春风而归的材料掉率共建表，效率与价值算法主要由 pu4ers 贡献。"
-msgstr ""
-
-#: src/components/re1999/AboutList.tsx:36
-msgctxt "re1999"
-msgid "已被暴雨回溯至当前海外服版本。"
-msgstr ""
-
-#: src/components/re1999/AboutList.tsx:28
-msgctxt "re1999"
-msgid "游戏数据"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:120
-msgctxt "re1999 inventory page"
-msgid "素材"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:461
-msgctxt "re1999 item category"
-msgid "彩材料"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:467
-msgctxt "re1999 item category"
-msgid "洞悉二"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:466
-msgctxt "re1999 item category"
-msgid "洞悉三"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:468
-msgctxt "re1999 item category"
-msgid "洞悉一"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:469
-msgctxt "re1999 item category"
-msgid "共鸣&觉察"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:471
-msgctxt "re1999 item category"
-msgid "荒原"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:462
-msgctxt "re1999 item category"
-msgid "金材料"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:464
-msgctxt "re1999 item category"
-msgid "蓝材料"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:465
-msgctxt "re1999 item category"
-msgid "绿材料"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:472
-msgctxt "re1999 item category"
-msgid "其他"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:460
-msgctxt "re1999 item category"
-msgid "钱和经验"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:470
-msgctxt "re1999 item category"
-msgid "心相"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:463
-msgctxt "re1999 item category"
-msgid "紫材料"
-msgstr ""
-
-#: src/pkg/cpp-re1999/GameAdapter.ts:379
-msgctxt "re1999 level code"
-msgid "厄险%s"
-msgstr ""
-
-#: src/components/re1999/QuickFilterBuilder.tsx:53
-msgctxt "re1999 quick filter"
-msgid "洞悉"
-msgstr ""
-
-#: src/components/re1999/QuickFilterBuilder.tsx:25
-msgctxt "re1999 quick filter"
-msgid "灵感"
-msgstr ""
-
-#: src/components/re1999/QuickFilterBuilder.tsx:42
-msgctxt "re1999 quick filter"
-msgid "稀有度"
-msgstr ""
-
-#: src/components/re1999/CharacterStatusPopover.tsx:255
-msgctxt "re1999 status group"
-msgid "调频"
-msgstr ""
-
-#: src/components/re1999/CharacterStatusPopover.tsx:254
-msgctxt "re1999 status group"
-msgid "调适"
-msgstr ""
-
-#: src/components/re1999/CharacterStatusPopover.tsx:124
-msgctxt "re1999 status group"
-msgid "洞二"
-msgstr ""
-
-#: src/components/re1999/CharacterStatusPopover.tsx:84
-msgctxt "re1999 status group"
-msgid "洞零"
-msgstr ""
-
-#: src/components/re1999/CharacterStatusPopover.tsx:144
-msgctxt "re1999 status group"
-msgid "洞三"
-msgstr ""
-
-#: src/components/re1999/CharacterStatusPopover.tsx:104
-msgctxt "re1999 status group"
-msgid "洞一"
-msgstr ""
-
-#: src/components/re1999/CharacterStatusPopover.tsx:196
-msgctxt "re1999 status group"
-msgid "共鸣"
-msgstr ""
-
-#: src/components/re1999/CharacterStatusPopover.tsx:195
-msgctxt "re1999 status group"
-msgid "觉察"
-msgstr ""
-
-#: src/pkg/cpp-re1999/UserDataAdapter.ts:166
-msgctxt "re1999 task"
-msgid "洞二"
-msgstr ""
-
-#. %d$from: from, %d$to: to
-#: src/pkg/cpp-re1999/UserDataAdapter.ts:173
-msgctxt "re1999 task"
-msgid "洞二等级 %d$from -> %d$to"
-msgstr ""
-
-#: src/pkg/cpp-re1999/UserDataAdapter.ts:164
-msgctxt "re1999 task"
-msgid "洞零"
-msgstr ""
-
-#. %d$from: from, %d$to: to
-#: src/pkg/cpp-re1999/UserDataAdapter.ts:171
-msgctxt "re1999 task"
-msgid "洞零等级 %d$from -> %d$to"
-msgstr ""
-
-#: src/pkg/cpp-re1999/UserDataAdapter.ts:167
-msgctxt "re1999 task"
-msgid "洞三"
-msgstr ""
-
-#. %d$from: from, %d$to: to
-#: src/pkg/cpp-re1999/UserDataAdapter.ts:174
-msgctxt "re1999 task"
-msgid "洞三等级 %d$from -> %d$to"
-msgstr ""
-
-#: src/pkg/cpp-re1999/UserDataAdapter.ts:165
-msgctxt "re1999 task"
-msgid "洞一"
-msgstr ""
-
-#. %d$from: from, %d$to: to
-#: src/pkg/cpp-re1999/UserDataAdapter.ts:172
-msgctxt "re1999 task"
-msgid "洞一等级 %d$from -> %d$to"
-msgstr ""
-
-#. %d: number
-#: src/pkg/cpp-re1999/UserDataAdapter.ts:184
-msgctxt "re1999 task"
-msgid "共鸣 %d"
-msgstr ""
-
-#. %s: style name
-#: src/pkg/cpp-re1999/UserDataAdapter.ts:196
-msgctxt "re1999 task"
-msgid "共鸣调频: %s"
-msgstr ""
-
-#. %d: number
-#: src/pkg/cpp-re1999/UserDataAdapter.ts:180
-msgctxt "re1999 task"
-msgid "觉察 %d"
-msgstr ""
-
-#. %s: style name
-#: src/pkg/cpp-re1999/UserDataAdapter.ts:192
-msgctxt "re1999 task"
-msgid "觉察调适: %s"
-msgstr ""
-
-#: src/pkg/cpp-re1999/UserDataAdapter.ts:161
-msgctxt "re1999 task"
-msgid "征集"
 msgstr ""
 
 #: src/Cpp.ts:58
