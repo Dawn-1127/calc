@@ -20,7 +20,7 @@ import { atom, useAtom, useAtomValue, useSetAtom } from 'jotai'
 import React, { ErrorInfo, memo, useEffect, useState } from 'react'
 import './App.css'
 import { useAtoms, useCpp, useGameAdapter } from './Cpp'
-import { AboutButton, AboutList, HelpButton } from './components/AboutList'
+import { AboutButton, AboutList } from './components/AboutList'
 import { Chamber, ChamberPortal } from './components/Chamber'
 import { CharacterList } from './components/CharacterList'
 import { ConfigButton, MaybeSoulButton, RegionButton, StageButton } from './components/ConfigUi'
@@ -166,7 +166,6 @@ const App = memo(() => {
           <DataDropdown />
           <ReloadDataButton />
           <AboutButton isOpen={aboutOpen} onClick={() => setAboutOpen((open) => !open)} />
-          <HelpButton />
           <LocaleButton />
         </Navbar.Group>
       </Navbar>
@@ -298,7 +297,6 @@ export const Loading = memo(() => {
     <>
       <Navbar fixedToTop={true}>
         <Navbar.Group align={Alignment.END}>
-          <HelpButton />
           <LocaleButton />
         </Navbar.Group>
       </Navbar>

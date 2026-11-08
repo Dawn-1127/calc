@@ -2,7 +2,6 @@ import { Alignment, Navbar } from '@blueprintjs/core'
 import { memo, useMemo } from 'react'
 import { LocaleButton } from '../locales'
 import { formatProfileName, getProfiles } from '../profiles'
-import { HelpButton } from './AboutList'
 
 export const Home = memo(() => {
   const profiles = useMemo(() => getProfiles(), [])
@@ -19,7 +18,6 @@ export const Home = memo(() => {
           </Navbar.Heading>
         </Navbar.Group>
         <Navbar.Group align={Alignment.END}>
-          <HelpButton />
           <LocaleButton />
         </Navbar.Group>
       </Navbar>

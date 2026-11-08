@@ -186,15 +186,3 @@ export const AboutButton = memo(({ isOpen, onClick }: { isOpen: boolean; onClick
     />
   )
 })
-
-export const HelpButton = memo(() => {
-  return (
-    <AnchorButton
-      href="https://alidocs.dingtalk.com/i/p/OlnXRJreeRDKAXLp"
-      icon="help"
-      minimal={true}
-      text={<span className="cpp-very-compact">{gt.gettext('帮助')}</span>}
-      {...externalLinkProps}
-    />
-  )
-})
