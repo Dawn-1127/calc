@@ -18,8 +18,25 @@ body {
 .App > section {
   overflow-y: hidden;
   overflow-x: hidden;
-  flex-shrink: 0;
+  flex-shrink: 1;
   margin-right: 1px;
+}
+
+.App > .cpp-character-section {
+  min-width: 560px;
+  flex-grow: 1;
+}
+
+.App > .cpp-task-section {
+  min-width: 180px;
+}
+
+.App > .cpp-farm-section {
+  min-width: 240px;
+}
+
+.App > .cpp-item-section {
+  min-width: 300px;
 }
 
 .App > section:last-child {

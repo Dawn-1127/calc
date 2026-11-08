@@ -172,7 +172,7 @@ const App = memo(() => {
       <div className="App">
         <AboutList isOpen={aboutOpen} />
         <section
-          className={Classes.ELEVATION_1}
+          className={`${Classes.ELEVATION_1} cpp-main-section cpp-character-section`}
           style={{
             width: Math.max(730 - defaultCharStatusWidth * 2 + charStatusWidth * 2 + charExtraWidth, 560),
             display: 'flex',
@@ -182,7 +182,7 @@ const App = memo(() => {
           <CharacterList charExtraWidthAtom={charExtraWidthAtom} />
         </section>
         <section
-          className={Classes.ELEVATION_1}
+          className={`${Classes.ELEVATION_1} cpp-main-section cpp-task-section`}
           style={{
             width: '270px',
             display: 'flex',
@@ -192,7 +192,7 @@ const App = memo(() => {
           <TaskList />
         </section>
         <section
-          className={Classes.ELEVATION_1}
+          className={`${Classes.ELEVATION_1} cpp-main-section cpp-farm-section`}
           style={{
             width: '470px',
             display: 'flex',
@@ -202,7 +202,7 @@ const App = memo(() => {
           <FarmList />
         </section>
         <section
-          className={Classes.ELEVATION_1}
+          className={`${Classes.ELEVATION_1} cpp-main-section cpp-item-section`}
           style={{
             width: '720px',
             display: 'flex',
